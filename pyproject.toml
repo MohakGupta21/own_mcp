@@ -1,0 +1,22 @@
+[project]
+name = "own-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "mohak.gupta", email = "mohak.gupta@whilter.ai" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-mcp-adapters>=0.3.2",
+    "langchain-openai>=1.7.1",
+    "langgraph>=1.2.15",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+own-mcp = "own_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
